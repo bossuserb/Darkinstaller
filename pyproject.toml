@@ -1,6 +1,6 @@
 [tool]
 [tool.poetry]
-name = "BossUserBot_Deployer"
+name = "DarkUserBot_Deployer"
 version = "1.0"
 description = "Automatic Deploy BossUserBot to Heroku"
 authors = ["Husnu"]
