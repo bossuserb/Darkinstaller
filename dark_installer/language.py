@@ -8,7 +8,7 @@ from json import loads
 def importlang ():
     console.clear()
     logo()
-    bilgi("[blue]\n\n[1] Azərbaycanca")
+    bilgi("[blue]\n\n[1] Azərbaycanca(yeni dillər əlavə olunacaq)")
     Dil = Prompt.ask("[bold yellow]1 yazıb enter vurun.[/]", choices=["1"], default="1")
 
     if Dil == "1":
@@ -19,4 +19,4 @@ def importlang ():
     return COUNTRY, LANGUAGE, TZ
 
 COUNTRY, LANGUAGE, TZ = importlang()
-LANG = loads(open(f"./boss_installer/language/{LANGUAGE}.bossjson", "r").read())["STRINGS"]
+LANG = loads(open(f"./dark_installer/language/{LANGUAGE}.darkjson", "r").read())["STRINGS"]
