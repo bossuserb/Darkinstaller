@@ -2,8 +2,8 @@ Darkuserbot+="\nᗪᗩᖇK AVTOMATIK QURULUM ✨"
 MESAJ+="\n "
 MESAJ+="\n✅Rəsmi kanal: @Darkuserbots"
 MESAJ+="\n✅Kömək qrupumuz: @Darksupports"
-MESAJ+="\n "
-KOMEK+="\n "
+MESAJ+="\n🆘Botdan qeyri-etik istifadəyə görə Dark heyəti məsuliyyət daşımır! "
+KOMEK+="\nHhhh "
 BOSLUQ="\n "
 clear
 echo -e $BOSLUQ
