@@ -1,6 +1,6 @@
-Bossuserbot+="\nẞoss AVTOMATIK QURULUM ✨"
+Darkuserbot+="\nᗪᗩᖇK AVTOMATIK QURULUM ✨"
 MESAJ+="\n "
-MESAJ+="\n✅Rəsmi kanal: @bossuserbot"
+MESAJ+="\n✅Rəsmi kanal: @Darkuserbots"
 MESAJ+="\n✅Kömək qrupumuz: @bossuserbotaz"
 MESAJ+="\n "
 KOMEK+="\n "
@@ -36,13 +36,13 @@ echo -e $MESAJ
 echo -e $BOSLUQ
 echo "Faylları yükləyirəm..."
 echo -e $BOSLUQ
-rm -rf bossinstaller
-git clone https://github.com/bossuserb/bossinstaller
+rm -rf darkinstaller
+git clone https://github.com/bossuserb/darkinstaller
 clear
 echo -e $BOSLUK
 echo -e $MESAJ
 echo -e $BOSLUQ
 echo -e $BOSLUQ
-cd bossinstaller
+cd darkinstaller
 pip install -r requirements.txt
-python -m boss_installer
+python -m dark_installer
