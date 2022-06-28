@@ -27,7 +27,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "boss" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "Dark" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -61,13 +61,13 @@ async def botlog (String, Api, Hash):
     await Client.start()
 
     KanalId = await Client(CreateChannelRequest(
-        title='BossUserBot BotLog',
+        title='DarkUserBot BotLog',
         about=LANG['AUTO_BOTLOG'],
         megagroup=True
     ))
     KanalId = KanalId.chats[0].id
 
-    Photo = await Client.upload_file(file='bossbot.jpg')
+    Photo = await Client.upload_file(file='darkbot.jpg')
     await Client(EditPhotoRequest(channel=KanalId, 
         photo=Photo))
     msg = await Client.send_message(KanalId, LANG['DONT_LEAVE'])
@@ -100,10 +100,10 @@ if __name__ == "__main__":
     onemli(LANG['DOWNLOADING'])
     
     # Noldu Kendi Reponu Yazamadın Mı? Hadi Başka Kapıya #
-    if os.path.isdir("./bossuserbot/"):
-        rm_r("./bossuserbot/")
-    repo = Repo.clone_from("https://github.com/bossuserb/bossuserbot",
-                           "./bossuserbot/", 
+    if os.path.isdir("./darkuserbot/"):
+        rm_r("./darkuserbot/")
+    repo = Repo.clone_from("https://github.com/darkuserb/darkuserbot",
+                           "./darkuserbot/", 
                            branch="master"
                           )
     basarili(LANG['DOWNLOADED'])
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "@BossUserBot"
+    config['DEFAULT_BIO'] = "@DarkUserBots"
     config['GALERI_SURE'] = "60"
     config['CHROME_DRIVER'] = "/usr/sbin/chromedriver"
     config['GOOGLE_CHROME_BIN'] = "/usr/sbin/chromium"
@@ -136,9 +136,9 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/bossuserb/bossuserbot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/darkuserb/darmuserbot"
     config['WARN_LIMIT'] = "3"
-    config['WARN_MODE'] = "gmute"
+    config['WARN_MODE'] = "qses"
     config['LANGUAGE'] = LANGUAGE
 
     basarili(LANG['SUCCESS_CONFIG'])
