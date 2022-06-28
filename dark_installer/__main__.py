@@ -1,6 +1,6 @@
 from time import time
 from git import Repo
-from boss_installer import *
+from dark_nstaller import *
 from .astring import main
 from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
