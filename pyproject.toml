@@ -2,7 +2,7 @@
 [tool.poetry]
 name = "DarkUserBot_Deployer"
 version = "1.0"
-description = "Automatic Deploy BossUserBot to Heroku"
+description = "Automatic Deploy DarkUserBot to Heroku"
 authors = ["Husnu"]
 [tool.poetry.dependencies]
 python = "^3.8"
