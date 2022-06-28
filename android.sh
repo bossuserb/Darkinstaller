@@ -1,7 +1,7 @@
 Darkuserbot+="\nᗪᗩᖇK AVTOMATIK QURULUM ✨"
 MESAJ+="\n "
 MESAJ+="\n✅Rəsmi kanal: @Darkuserbots"
-MESAJ+="\n✅Kömək qrupumuz: @bossuserbotaz"
+MESAJ+="\n✅Kömək qrupumuz: @Darksupports"
 MESAJ+="\n "
 KOMEK+="\n "
 BOSLUQ="\n "
@@ -37,7 +37,7 @@ echo -e $BOSLUQ
 echo "Faylları yükləyirəm..."
 echo -e $BOSLUQ
 rm -rf darkinstaller
-git clone https://github.com/bossuserb/darkinstaller
+git clone https://github.com/darkuserb/darkinstaller
 clear
 echo -e $BOSLUK
 echo -e $MESAJ
