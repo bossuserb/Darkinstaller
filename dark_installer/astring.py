@@ -1,5 +1,5 @@
 # Don't kang without permission #
-# @bossuserBot #
+# @Darkuserbots #
 
 from telethon.errors import SessionPasswordNeededError, PhoneCodeInvalidError, PasswordHashInvalidError, PhoneNumberInvalidError, PhoneCodeExpiredError
 from telethon import TelegramClient, events, version
@@ -85,8 +85,8 @@ def main():
     Sonuc = Prompt.ask(f"[bold yellow]{LANG['WHICH']}[/]", choices=["1", "2"], default="1")
 
     if Sonuc == "2":
-        API_ID = 3493940
-        API_HASH = "253a414629cbea3e3a6a717f140f7cda"
+        API_ID = 19285481
+        API_HASH = "bdd56fa1b1d84d056b2aeab4718b73d8"
         
         client = InteractiveTelegramClient(StringSession(), API_ID, API_HASH)
         return client.session.save(), API_ID, API_HASH
