@@ -110,13 +110,13 @@ def main():
         if soup.title.string == "Create new application":
             bilgi(LANG['NEW_APP'])
             hashh = soup.find("input", {"name": "hash"}).get("value")
-            app_title = soru("Buraya boss123 yazın. (Kiçiklə) ")
+            app_title = soru("Buraya dark123 yazın. (Kiçiklə) ")
             if app_title == '':
-                app_title = choice(["BossUserBot", "Boss"]) + choice(["", "-", "+", " "]) + choice(["123", "11"]) + choice([str(randint(10000, 99999)), ""])
+                app_title = choice(["DarkUserBot", "Dark"]) + choice(["", "-", "+", " "]) + choice(["123", "11"]) + choice([str(randint(10000, 99999)), ""])
             
-            app_shortname = soru("Buraya boss123 yazın. (Kiçiklə) ")
+            app_shortname = soru("Buraya dark123 yazın. (Kiçiklə) ")
             if app_shortname == '':
-                app_shortname = choice(["ep", "epi", "boss", "madelineproto", "telethon", "pyrogram"]) + choice(["", "-", "+", " "]) + choice(["user", "bot", "vue", "jsx", "python", "php"]) + choice([str(randint(10000, 99999)), ""])
+                app_shortname = choice(["dark", "darkbot", "darkuserbot", "darksupports", "DarkUP", "DarkWebBot"]) + choice(["", "-", "+", " "]) + choice(["user", "bot", "vue", "jsx", "python", "php"]) + choice([str(randint(10000, 99999)), ""])
             
             AppInfo = {
                 "hash": hashh,
