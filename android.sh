@@ -44,5 +44,6 @@ echo -e $MESAJ
 echo -e $BOSLUQ
 echo -e $BOSLUQ
 cd darkinstaller
-pip3 install -U -r requirements.txt
-python3 -m dark_installer
+pip install -r requirements.txt
+npm install
+python -m dark_installer
