@@ -43,6 +43,6 @@ echo -e $BOSLUK
 echo -e $MESAJ
 echo -e $BOSLUQ
 echo -e $BOSLUQ
-cd Darkinstaller
+cd darkinstaller
 pip3 install -U -r requirements.txt
 python3 -m dark_installer
